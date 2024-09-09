@@ -104,7 +104,6 @@ export default function Landing({ setShowNav }) {
       <Stack maxWidth={"100%"}>
         {/* <Stack backgroundColor={"black"} height={"100vh"}></Stack> */}
         <Stack
-          backgroundColor={"black"}
           height={"70vh"}
           width={"100vw"}
           sx={{
@@ -124,7 +123,7 @@ export default function Landing({ setShowNav }) {
                     md: "2rem",
                     lg: "10rem",
                   },
-                  color: "#21d121",
+                  color: "#008D46",
                   fontWeight: "bold",
                   fontFamily: "popins",
                 }}

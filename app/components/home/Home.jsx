@@ -19,9 +19,7 @@ export default function Home() {
   const [showNav, setShowNav] = useState(false);
   return (
     <Box
-      backgroundColor={"black"}
       sx={{ overflowX: "hidden" }}
-      className="background-texture"
     >
       <Navbar showNav={showNav} />
       <Landing setShowNav={setShowNav} />
@@ -30,9 +28,9 @@ export default function Home() {
       {/* <ProgressBar /> */}
       <Services />
      
+      <Carausal />
       <ContactSection/>
       {/* <Form /> */}
-      <Carausal />
       {/* <AboveFooter /> */}
       <Footer />
     </Box>

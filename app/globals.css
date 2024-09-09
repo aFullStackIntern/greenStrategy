@@ -6,13 +6,13 @@
 html {
   scroll-behavior: smooth;
 }
-body {
-  background-color: #0a0a0a; /* Base background color */
-  background-image: url("/assets/texture.jpg"); /* Texture image */
-  mix-blend-mode: difference; /* Blend mode to overlay the image with the background color */
-  background-size: contain; /* Cover the entire background */
-  background-position: center; /* Center the image */
-}
+/* body {
+  background-color: #0a0a0a; 
+  background-image: url("/assets/texture.jpg"); 
+  mix-blend-mode: difference; 
+  background-size: contain; 
+  background-position: center; 
+} */
 
 .market-research {
   display: flex;
@@ -178,11 +178,10 @@ body {
 } */
 body {
   cursor: none;
-  --text-texture:url("/assets/text.png")
-  background-color: #0a0a0a; /* Base background color */
-  background-image: url("/assets/texture.jpg"); /* Texture image */
+  background-color: #0a0a0a; 
+  background-image: url("/assets/1.png"); /* Texture image */
   mix-blend-mode: difference; /* Blend mode to overlay the image with the background color */
-  background-size: contain; /* Cover the entire background */
+  background-size: inherit; /* Cover the entire background */
   background-position: center; /* Center the image */
 }
 

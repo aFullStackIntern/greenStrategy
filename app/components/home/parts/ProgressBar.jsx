@@ -7,7 +7,6 @@ export default function ProgressBar() {
       width={"100%"}
       direction={"row"}
       gap={"10px"}
-      backgroundColor={"black"}
       sx={{ justifyContent: "center", alignItems: "center" }}
     >
       <Stack

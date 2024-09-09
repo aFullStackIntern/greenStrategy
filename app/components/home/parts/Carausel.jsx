@@ -49,10 +49,23 @@ var settingsRight = {
 
 export default function Carausal() {
   return (
-    <Box padding={"32px 106px 60px 106px"}>
-      <Typography color={"white"} fontSize={"2.5rem"} margin={"45px 0"}>
-        Trusted by <span style={{ color: "#0c9265" }}>the best</span>
-      </Typography>
+    <Box padding={"50px 50px"}>
+      <Stack direction={"row"} margin={"45px 0"}>
+        <Typography
+          className="text-stroke"
+          fontSize={"70px"}
+          color="transparent"
+          fontWeight={"bold"}
+          lineHeight={1}
+        >
+          Our&nbsp;
+        </Typography>
+        <span
+          style={{ color: "#008D46", fontWeight: "bold", fontSize: "70px" }}
+        >
+          Clients
+        </span>
+      </Stack>
       <Stack gap={"40px"}>
         <Slider {...settings}>
           {carausel.map((el, i) => {

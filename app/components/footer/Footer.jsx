@@ -98,63 +98,67 @@ export default function Footer() {
     //     </Stack>
     //   </Stack>
     // </Stack>
-    <Stack
-      direction={"row"}
-      justifyContent={"space-around"}
-      p={"40px 80px 80px 80px"}
-    >
-      <Stack width={"60%"}>
-        <Typography color="#0c9265" fontSize={"25px"}>
-          let's talk
-        </Typography>
-        <Stack gap={"37px"}>
-          <Stack direction={"row"} gap={"10px"}>
-            <Typography
-              className="text-stroke"
-              fontSize={"90px"}
-              color="transparent"
-              fontWeight={"bold"}
-              lineHeight={1}
-            >
-              about your{" "}
-              <span style={{ color: "white", fontSize: "90px" }}>
-                {" "}
-                next project.
+    <>
+     
+      <Stack
+        direction={"row"}
+        justifyContent={"space-around"}
+        p={"40px 80px 80px 80px"}
+      >
+        <Stack width={"60%"}>
+          <Typography color="#0c9265" fontSize={"25px"}>
+            let's talk
+          </Typography>
+          <Stack gap={"37px"}>
+            <Stack direction={"row"} gap={"10px"}>
+              <Typography
+                className="text-stroke"
+                fontSize={"90px"}
+                color="transparent"
+                fontWeight={"bold"}
+                lineHeight={1}
+              >
+                about your{" "}
+                <span style={{ color: "white", fontSize: "90px" }}>
+                  {" "}
+                  next project.
+                </span>
+              </Typography>
+            </Stack>
+            <button className="btn-animated">Get in touch</button>
+          </Stack>
+        </Stack>
+        <Stack width={"30%"} gap={"15px"} justifyContent={"center"}>
+          <Typography color="white" fontSize={"35px"} fontWeight={"bold"}>
+            contact{" "}
+            <span style={{ color: "#0c9265", fontSize: "35px" }}>us</span>
+          </Typography>
+          <Stack gap={"10px"}>
+            <Stack direction={"row"} gap={"15px"}>
+              <LocalPhoneIcon sx={{ color: "#0c9265" }} />{" "}
+              <span style={{ color: "white" }}>+919823273822</span>
+            </Stack>
+            <Stack direction={"row"} gap={"15px"}>
+              <EmailIcon sx={{ color: "#0c9265" }} />{" "}
+              <span style={{ color: "white" }}>+info@green.com</span>
+            </Stack>
+            <Stack direction={"row"} gap={"15px"}>
+              <LocalPhoneIcon sx={{ color: "#0c9265" }} />{" "}
+              <span style={{ color: "white" }}>+919823273822</span>
+            </Stack>
+            <Stack direction={"row"} gap={"15px"}>
+              <HomeIcon sx={{ color: "#0c9265" }} />{" "}
+              <span style={{ color: "white" }}>
+                613 The Metropolis Tower Business Bay, Dubai, UAE
               </span>
-            </Typography>
+            </Stack>
           </Stack>
-          <button className="btn-animated">Get in touch</button>
+          <Stack direction={"row"} gap={"10px"}>
+            <FacebookIcon sx={{ color: "#0c9265" }} />
+            <InstagramIcon sx={{ color: "#0c9265" }} />
+          </Stack>
         </Stack>
       </Stack>
-      <Stack width={"30%"} gap={"15px"} justifyContent={"center"}>
-        <Typography color="white" fontSize={"35px"} fontWeight={"bold"}>
-          contact <span style={{ color: "#0c9265", fontSize: "35px" }}>us</span>
-        </Typography>
-        <Stack gap={"10px"}>
-          <Stack direction={"row"} gap={"15px"}>
-            <LocalPhoneIcon sx={{ color: "#0c9265" }} />{" "}
-            <span style={{ color: "white" }}>+919823273822</span>
-          </Stack>
-          <Stack direction={"row"} gap={"15px"}>
-            <EmailIcon sx={{ color: "#0c9265" }} />{" "}
-            <span style={{ color: "white" }}>+info@green.com</span>
-          </Stack>
-          <Stack direction={"row"} gap={"15px"}>
-            <LocalPhoneIcon sx={{ color: "#0c9265" }} />{" "}
-            <span style={{ color: "white" }}>+919823273822</span>
-          </Stack>
-          <Stack direction={"row"} gap={"15px"}>
-            <HomeIcon sx={{ color: "#0c9265" }} />{" "}
-            <span style={{ color: "white" }}>
-              613 The Metropolis Tower Business Bay, Dubai, UAE
-            </span>
-          </Stack>
-        </Stack>
-        <Stack direction={"row"} gap={"10px"}>
-          <FacebookIcon sx={{ color: "#0c9265" }} />
-          <InstagramIcon sx={{ color: "#0c9265" }} />
-        </Stack>
-      </Stack>
-    </Stack>
+    </>
   );
 }

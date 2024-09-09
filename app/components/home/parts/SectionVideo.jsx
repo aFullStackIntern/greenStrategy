@@ -22,7 +22,12 @@ const SectionVideo = () => {
           <source src="/assets/video.mp4" type="video/mp4" />
         </video>
       </Stack>
-      <Stack width={"30%"} alignItems={"start"} justifyContent={"center"} gap={2}>
+      <Stack
+        width={"30%"}
+        alignItems={"start"}
+        justifyContent={"center"}
+        gap={2}
+      >
         <Stack direction={"row"} gap={"20px"} alignItems={"Center"}>
           <Box
             sx={{
@@ -40,7 +45,7 @@ const SectionVideo = () => {
           <Typography color="white" fontWeight={"bold"} fontSize={"30px"}>
             Our
           </Typography>
-          <Typography color="#0c9265" fontWeight={"bold"} fontSize={"30px"}>
+          <Typography color="#008D46" fontWeight={"bold"} fontSize={"30px"}>
             Vision
           </Typography>
         </Stack>

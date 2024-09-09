@@ -34,7 +34,11 @@ export default function Services() {
         >
           We Are&nbsp;
         </Typography>
-        <span style={{ color: "#0c9265",fontWeight:"bold", fontSize: "70px" }}>Offering:-</span>
+        <span
+          style={{ color: "#008D46", fontWeight: "bold", fontSize: "70px" }}
+        >
+          Offering:-
+        </span>
       </Stack>
       <Stack
         direction={{
