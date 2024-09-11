@@ -1,14 +1,12 @@
 import { Box, Stack, TextField, Typography } from "@mui/material";
 import Link from "next/link";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import XIcon from "@mui/icons-material/X";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import logo from "@/public/assets/logo.png";
 import Image from "next/image";
-import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import Logo from "@/public/assets/2.png"
 import EmailIcon from "@mui/icons-material/Email";
 import HomeIcon from "@mui/icons-material/Home";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import InstagramIcon from "@mui/icons-material/Instagram";
 export default function Footer() {
   return (
     // <Stack
@@ -98,64 +96,104 @@ export default function Footer() {
     //     </Stack>
     //   </Stack>
     // </Stack>
+    // <>
+
+    //   <Stack
+    //     direction={"row"}
+    //     justifyContent={"space-around"}
+    //     p={"40px 80px 80px 80px"}
+    //   >
+    //     <Stack width={"60%"}>
+    //       <Typography color="#0c9265" fontSize={"25px"}>
+    //         let's talk
+    //       </Typography>
+    //       <Stack gap={"37px"}>
+    //         <Stack direction={"row"} gap={"10px"}>
+    //           <Typography
+    //             className="text-stroke"
+    //             fontSize={"90px"}
+    //             color="transparent"
+    //             fontWeight={"bold"}
+    //             lineHeight={1}
+    //           >
+    //             about your{" "}
+    //             <span style={{ color: "white", fontSize: "90px" }}>
+    //               {" "}
+    //               next project.
+    //             </span>
+    //           </Typography>
+    //         </Stack>
+    //         <button className="btn-animated">Get in touch</button>
+    //       </Stack>
+    //     </Stack>
+    //     <Stack width={"30%"} gap={"15px"} justifyContent={"center"}>
+    //       <Typography color="white" fontSize={"35px"} fontWeight={"bold"}>
+    //         contact{" "}
+    //         <span style={{ color: "#0c9265", fontSize: "35px" }}>us</span>
+    //       </Typography>
+    //       <Stack gap={"10px"}>
+    //         <Stack direction={"row"} gap={"15px"}>
+    //           <LocalPhoneIcon sx={{ color: "#0c9265" }} />{" "}
+    //           <span style={{ color: "white" }}>+919823273822</span>
+    //         </Stack>
+    //         <Stack direction={"row"} gap={"15px"}>
+    //           <EmailIcon sx={{ color: "#0c9265" }} />{" "}
+    //           <span style={{ color: "white" }}>+info@green.com</span>
+    //         </Stack>
+    //         <Stack direction={"row"} gap={"15px"}>
+    //           <LocalPhoneIcon sx={{ color: "#0c9265" }} />{" "}
+    //           <span style={{ color: "white" }}>+919823273822</span>
+    //         </Stack>
+    //         <Stack direction={"row"} gap={"15px"}>
+    //           <HomeIcon sx={{ color: "#0c9265" }} />{" "}
+    //           <span style={{ color: "white" }}>
+    //             613 The Metropolis Tower Business Bay, Dubai, UAE
+    //           </span>
+    //         </Stack>
+    //       </Stack>
+    //       <Stack direction={"row"} gap={"10px"}>
+    //         <FacebookIcon sx={{ color: "#0c9265" }} />
+    //         <InstagramIcon sx={{ color: "#0c9265" }} />
+    //       </Stack>
+    //     </Stack>
+    //   </Stack>
+    // </>
     <>
-     
-      <Stack
-        direction={"row"}
-        justifyContent={"space-around"}
-        p={"40px 80px 80px 80px"}
-      >
-        <Stack width={"60%"}>
-          <Typography color="#0c9265" fontSize={"25px"}>
-            let's talk
-          </Typography>
-          <Stack gap={"37px"}>
-            <Stack direction={"row"} gap={"10px"}>
-              <Typography
-                className="text-stroke"
-                fontSize={"90px"}
-                color="transparent"
-                fontWeight={"bold"}
-                lineHeight={1}
-              >
-                about your{" "}
-                <span style={{ color: "white", fontSize: "90px" }}>
-                  {" "}
-                  next project.
-                </span>
-              </Typography>
-            </Stack>
-            <button className="btn-animated">Get in touch</button>
-          </Stack>
-        </Stack>
-        <Stack width={"30%"} gap={"15px"} justifyContent={"center"}>
-          <Typography color="white" fontSize={"35px"} fontWeight={"bold"}>
-            contact{" "}
-            <span style={{ color: "#0c9265", fontSize: "35px" }}>us</span>
-          </Typography>
-          <Stack gap={"10px"}>
-            <Stack direction={"row"} gap={"15px"}>
-              <LocalPhoneIcon sx={{ color: "#0c9265" }} />{" "}
-              <span style={{ color: "white" }}>+919823273822</span>
-            </Stack>
-            <Stack direction={"row"} gap={"15px"}>
-              <EmailIcon sx={{ color: "#0c9265" }} />{" "}
-              <span style={{ color: "white" }}>+info@green.com</span>
-            </Stack>
-            <Stack direction={"row"} gap={"15px"}>
-              <LocalPhoneIcon sx={{ color: "#0c9265" }} />{" "}
-              <span style={{ color: "white" }}>+919823273822</span>
-            </Stack>
-            <Stack direction={"row"} gap={"15px"}>
-              <HomeIcon sx={{ color: "#0c9265" }} />{" "}
-              <span style={{ color: "white" }}>
-                613 The Metropolis Tower Business Bay, Dubai, UAE
-              </span>
-            </Stack>
+      <Stack>
+        <Stack
+          width={"100%"}
+          height={"20vh"}
+          bgcolor={"#0a320a"}
+          direction={"row"}
+          justifyContent={"space-around"}
+          alignItems={"center"}
+        >
+          <Stack>
+            <Image src={Logo} width={100} />
           </Stack>
           <Stack direction={"row"} gap={"10px"}>
-            <FacebookIcon sx={{ color: "#0c9265" }} />
-            <InstagramIcon sx={{ color: "#0c9265" }} />
+            <LocationOnIcon sx={{ color: "#9FAAA0" }} />
+            <Typography color="#9FAAA0" fontFamily={"Lora"}>
+              The Metropolis, BusinessBay
+            </Typography>
+          </Stack>
+          <Stack direction={"row"} gap={"10px"}>
+            <LocalPhoneIcon sx={{ color: "#9FAAA0" }} />
+            <Typography color="#9FAAA0" fontFamily={"Lora"}>
+              +9715 61728827
+            </Typography>
+          </Stack>
+          <Stack direction={"row"} gap={"10px"}>
+            <EmailIcon sx={{ color: "#9FAAA0" }} />
+            <Typography color="#9FAAA0" fontFamily={"Lora"}>
+              info@gns.com
+            </Typography>
+          </Stack>
+          <Stack direction={"row"} gap={"10px"}>
+            <InstagramIcon sx={{ color: "#9FAAA0" }} />
+            <Typography color="#9FAAA0" fontFamily={"Lora"}>
+              GreenandStrategy
+            </Typography>
           </Stack>
         </Stack>
       </Stack>

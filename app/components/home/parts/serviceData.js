@@ -1,7 +1,7 @@
 export const serviceData = [
   {
     id: 0,
-    name: "Data Analysis",
+    name: "Data Analysis & Strategy",
     data: "Stay ahead of your competitors with our market research expertise. ",
   },
   {

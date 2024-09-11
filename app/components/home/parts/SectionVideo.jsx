@@ -4,41 +4,38 @@ const SectionVideo = () => {
   return (
     <Stack direction={"row"} pb={5} justifyContent={"space-around"}>
       <Stack
-        width={"30%"}
+        width={"40%"}
         alignItems={"start"}
         justifyContent={"center"}
         gap={2}
       >
         <Stack direction={"row"} gap={"20px"} alignItems={"Center"}>
-          <Box
-            sx={{
-              content: "''",
-              width: "50px",
-              height: "1px",
-              bgcolor: "white",
-            }}
-          />
-          <Typography color="white">
-            a solution to your digital success
+          <Typography color="white" fontFamily={"Lora"} fontSize={"70px"}>
+            <span style={{ color: "#005900", fontWeight: "bold" }}>How</span> Do
+            We Work?
           </Typography>
         </Stack>
-        <Stack direction={"row"} gap={"10px"}>
-          <Typography color="white" fontWeight={"bold"} fontSize={"30px"}>
-            Our
-          </Typography>
-          <Typography color="#008D46" fontWeight={"bold"} fontSize={"30px"}>
-            Vision
-          </Typography>
-        </Stack>
-        <Stack>
-          <Typography color="#cacaca" fontSize={"20px"}>
-            groundwork is a complete digital solutions agency that has been in
-            operation since 2019 and is dedicated to helping brands build their
-            online presence and achieve their online goals.
+        <Box
+          marginTop={"5px"}
+          sx={{
+            content: "''",
+            width: "400px",
+            height: "1px",
+            bgcolor: "#655d5d",
+          }}
+        />
+        <Stack marginTop={"5px"}>
+          <Typography color="white" fontSize={"20px"} fontFamily={"Lora"}>
+            Our process begins with assessing and understanding our clients'
+            needs, defining their business challenges, and establishing mutual
+            trust. We then conduct comprehensive market research through
+            surveys, a s well as primary and secondary research, to gather the
+            necessary data. Our expert analysts and strategists meticulously
+            analyze this data, transforming it into actionable solutions.
           </Typography>
         </Stack>
       </Stack>
-      <Stack width={"60%"}>
+      <Stack width={"50%"}>
         {/* <ReactPlayer
         url="@/public/assets/video.mp4"
         width="100%"
