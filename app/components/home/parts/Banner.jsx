@@ -162,9 +162,9 @@ import { useRef, useState, useEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import banner1 from "@/public/assets/12.png";
-import banner2 from "@/public/assets/23.png";
-import banner3 from "@/public/assets/34.png";
+import banner1 from "@/public/assets/12.jpg";
+import banner2 from "@/public/assets/23.jpg";
+import banner3 from "@/public/assets/34.jpg";
 import baby from "@/public/assets/baby.png";
 import skin from "@/public/assets/skin-care.jpg";
 import hair from "@/public/assets/Hair.webp";
@@ -203,7 +203,7 @@ export default function Banner() {
     fade: true,
     speed: 2000,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 5000,
     draggable: true,
     arrows: false,
@@ -214,7 +214,7 @@ export default function Banner() {
   const Images = [
     {
       id: 1,
-      head: "Your best provider for data analysis and strategy in UAE",
+      head: "#1 Data Analysis and Strategy Firm in the USA",
       content:
         "We deliver the bullet proof strategy for your business success, driven by invalueable data and in depth research tailored specifically for your brand.",
       src: banner1,
@@ -249,15 +249,17 @@ export default function Banner() {
             display={"flex"}
             key={d.id}
             flexDirection={"row"}
-            height={"70vh"}
+            height={"57vh"}
             border={"none"}
             zIndex={11}
           >
             <Box
               display={"inline-block"}
               position={"relative"}
-              height={"70vh"}
+              height={"53vh"}
               width={"50%"}
+              borderRadius={"100px 0 0 0"}
+              overflow={"hidden"}
             >
               <Image
                 src={d.src}
@@ -276,8 +278,25 @@ export default function Banner() {
               position={"relative"}
               bottom={"40%"}
             >
-              <Typography fontSize={"2.5rem"}>{d.head}</Typography>
-              <Typography fontSize={"1.2rem"}>{d.content}</Typography>
+              <Typography fontSize={"3.5rem"} fontFamily={"Lora"}>
+                {d.head}
+              </Typography>
+              <Box
+                marginTop={"50px"}
+                sx={{
+                  content: "''",
+                  width: "400px",
+                  height: "1px",
+                  bgcolor: "#655d5d",
+                }}
+              />
+              <Typography
+                fontSize={"1.8rem"}
+                fontFamily={"Lora"}
+                marginTop={"50px"}
+              >
+                {d.content}
+              </Typography>
             </Box>
           </Box>
         ))}
@@ -313,6 +332,7 @@ function ProgressBar({ currentSlide, totalSlides, onProgressBarClick }) {
       width={"100%"}
       direction={"row"}
       gap={"20px"}
+      backgroundColor={"black"}
       sx={{ justifyContent: "center", alignItems: "center" }}
     >
       {[...Array(totalSlides)].map((_, index) => (

@@ -31,6 +31,7 @@ export default function Services() {
           color="transparent"
           fontWeight={"bold"}
           lineHeight={1}
+          fontFamily= {"Lora"}
         >
           We Are&nbsp;
         </Typography>

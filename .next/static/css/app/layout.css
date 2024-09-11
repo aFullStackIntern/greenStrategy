@@ -183,7 +183,7 @@ html {
 body {
   cursor: none;
   background-color: #0a0a0a; 
-  background-image: url("/assets/2.png"); /* Texture image */
+  background-image: url("/assets/1.png"); /* Texture image */
   mix-blend-mode: difference; /* Blend mode to overlay the image with the background color */
   background-size: inherit; /* Cover the entire background */
   background-position: center; /* Center the image */

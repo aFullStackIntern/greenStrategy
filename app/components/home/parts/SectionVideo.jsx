@@ -3,25 +3,6 @@ import React from 'react'
 const SectionVideo = () => {
   return (
     <Stack direction={"row"} pb={5} justifyContent={"space-around"}>
-      <Stack width={"60%"}>
-        {/* <ReactPlayer
-        url="@/public/assets/video.mp4"
-        width="100%"
-        height="auto"
-        controls
-      /> */}
-        <video
-          width="100%"
-          height="auto"
-          autoPlay
-          loop
-          muted
-          controls={false}
-          style={{ borderRadius: "20px" }}
-        >
-          <source src="/assets/video.mp4" type="video/mp4" />
-        </video>
-      </Stack>
       <Stack
         width={"30%"}
         alignItems={"start"}
@@ -56,6 +37,25 @@ const SectionVideo = () => {
             online presence and achieve their online goals.
           </Typography>
         </Stack>
+      </Stack>
+      <Stack width={"60%"}>
+        {/* <ReactPlayer
+        url="@/public/assets/video.mp4"
+        width="100%"
+        height="auto"
+        controls
+      /> */}
+        <video
+          width="100%"
+          height="auto"
+          autoPlay
+          loop
+          muted
+          controls={false}
+          style={{ borderRadius: "20px" }}
+        >
+          <source src="/assets/video.mp4" type="video/mp4" />
+        </video>
       </Stack>
     </Stack>
   );
