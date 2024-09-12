@@ -51,7 +51,6 @@ const ContactSection = () => {
           <Stack gap={"5px"}>
             <Typography color="white" fontSize={"20px"} fontFamily={"Lora"}>
               We greatly appreciate your interest.
-
             </Typography>
           </Stack>
           <Stack gap={"20px"}>
@@ -306,7 +305,7 @@ const ContactSection = () => {
                 sx={{
                   borderRadius: "8px",
                   padding: "0.5rem 2rem",
-                  bgcolor: "#0c9265",
+                  bgcolor: "#005900",
                 }}
               >
                 Submit

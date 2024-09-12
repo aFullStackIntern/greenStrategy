@@ -3,11 +3,11 @@
 import { Box, Stack, Typography } from "@mui/material";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import logo from "../home/parts/logo.PNG";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import Image from "next/image";
-import logo from "@/public/assets/Green-&-Strategy.jpg";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
+import Image from "next/image";
 export default function Landing({ setShowNav }) {
   const animeRef = useRef();
 
@@ -47,8 +47,8 @@ export default function Landing({ setShowNav }) {
 
       scrollTrigger: {
         trigger: animeRef.current,
-        start: "center center",
-        end: "bottom 25%",
+        start: "center 30%",
+        end: "bottom 35%",
         scrub: true,
         // markers: true,
       },
@@ -113,10 +113,20 @@ export default function Landing({ setShowNav }) {
             // gap: "5px",
           }}
         >
-          <Stack width={"100%"}>
+          <Stack height={"100%"} width={"100%"}>
             {/* <Image src={logo} alt="" ref={animeRef} fill objectFit="cover" /> */}
-            <Stack ref={animeRef} direction={"row"} justifyContent={"center"}>
-              <Typography
+            <Stack
+              ref={animeRef}
+              justifyContent={"center"}
+              paddingTop={"200px"}
+              alignItems={"center"}
+              height={"100%"}
+              width={"100%"}
+            >
+              <Box width={"400px"} height={"400px"} position={"absolute"}>
+                <Image src={logo} alt="" fill objectFit="contain" />
+              </Box>
+              {/* <Typography
                 sx={{
                   fontSize: {
                     xs: "1.6rem",
@@ -157,7 +167,7 @@ export default function Landing({ setShowNav }) {
                 <span className="letter">e</span>
                 <span className="letter">g</span>
                 <span className="letter">y</span>
-              </Typography>
+              </Typography> */}
             </Stack>
           </Stack>
         </Stack>
