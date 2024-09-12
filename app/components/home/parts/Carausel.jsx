@@ -50,21 +50,10 @@ var settingsRight = {
 export default function Carausal() {
   return (
     <Box padding={"50px 50px"}>
-      <Stack direction={"row"} margin={"45px 0"}>
-        <Typography
-          className="text-stroke"
-          fontSize={"70px"}
-          color="transparent"
-          fontWeight={"bold"}
-          lineHeight={1}
-        >
-          Our&nbsp;
+      <Stack direction={"row"} alignItems={"Center"} pb={2}>
+        <Typography color="white" fontFamily={"Lora"} fontSize={"70px"}>
+          Our Clients
         </Typography>
-        <span
-          style={{ color: "#008D46", fontWeight: "bold", fontSize: "70px" }}
-        >
-          Clients
-        </span>
       </Stack>
       <Stack gap={"40px"}>
         <Slider {...settings}>

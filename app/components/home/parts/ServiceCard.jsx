@@ -45,29 +45,36 @@ export default function ServiceCard({ name, data }) {
         }}
       >
         <Stack alignItems={"center"}>
-          <BarChartIcon sx={{ height: "60px", width: "60px" }} />
-          <h2 style={{ textAlign: "center" }}>{name}</h2>
+          <BarChartIcon
+            sx={{ height: "60px", width: "60px", color: "#005900" }}
+          />
+          <h2 style={{ textAlign: "center", fontFamily: "Lora" }}>{name}</h2>
 
-          <Typography marginTop={"4px"} sx={{ textAlign: "center" }}>
+          <Typography
+            marginTop={"5px"}
+            sx={{ textAlign: "center" }}
+            fontFamily={"Lora"}
+            color="#808080"
+          >
             {data}
           </Typography>
         </Stack>
-        <Stack
-          width={"100%"}
-          height={"20px"}
-          alignItems={"center"}
-          position={"relative"}
-        >
-          <Slide direction="up" in={showButton} mountOnEnter unmountOnExit>
-            <Button
-            endIcon={<ArrowRightIcon sx={{pl:"0px",fontSize:"10px"}}/>}
-              color={"limegreen"}
-              sx={{ textTransform: "none", color: "#0c9265" }}
-            >
-              Learn more
-            </Button>
-          </Slide>
-        </Stack>
+      </Stack>
+      <Stack
+        width={"100%"}
+        height={"20px"}
+        alignItems={"center"}
+        position={"relative"}
+      >
+        <Slide direction="up" in={showButton} mountOnEnter unmountOnExit>
+          <Button
+            endIcon={<ArrowRightIcon sx={{ pl: "0px", fontSize: "10px" }} />}
+            color={"limegreen"}
+            sx={{ textTransform: "none", color: "#0c9265" }}
+          >
+            Learn more
+          </Button>
+        </Slide>
       </Stack>
     </Stack>
   );

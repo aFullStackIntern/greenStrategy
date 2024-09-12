@@ -24,7 +24,7 @@ export default function Services() {
       >
         Our Services
       </h2> */}
-      <Stack direction={"row"}>
+      {/* <Stack direction={"row"}>
         <Typography
           className="text-stroke"
           fontSize={"70px"}
@@ -40,6 +40,13 @@ export default function Services() {
         >
           Offering:-
         </span>
+      </Stack> */}
+      <Stack direction={"row"} gap={"20px"} alignItems={"Center"}>
+        <Typography color="white" fontFamily={"Lora"} fontSize={"70px"}>
+          <span style={{ color: "#005900", fontWeight: "bold" }}>What</span>{" "}
+          {""}
+          We do
+        </Typography>
       </Stack>
       <Stack
         direction={{

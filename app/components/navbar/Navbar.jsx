@@ -10,8 +10,8 @@ import Image from "next/image";
 import { useState } from "react";
 import logoWhite from "@/public/assets/logoWhitee.png"
 const navData = [
-  { name: "About", route: "/About" },
-  { name: "Services", route: "/Services" },
+  { name: "The Team", route: "/About" },
+  { name: "Our Services", route: "/Services" },
   { name: "Contact us", route: "/Contacts" },
 ];
 
@@ -67,6 +67,7 @@ export default function Navbar({ showNav = true }) {
                   style={{ textDecoration: "none" }}
                 >
                   <Typography
+                  fontFamily={"Lora"}
                     margin={"0 20px"}
                     color={pathname === el.route ? "limegreen" : "white"}
                     fontSize={"1.4rem"}

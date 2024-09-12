@@ -13,112 +13,53 @@ import { MuiTelInput } from "mui-tel-input";
 import banner from "@/public/assets/contact.png";
 
 const ContactSection = () => {
-    const [phone, setPhone] = useState("");
+  const [phone, setPhone] = useState("");
 
-    const handlePhoneChange = (newPhone) => {
-      setPhone(newPhone);
-    };
+  const handlePhoneChange = (newPhone) => {
+    setPhone(newPhone);
+  };
   return (
     <>
-      {/* <Stack>
-        <Box
-          sx={{
-            backgroundImage: `url('/assets/contact.png')`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            width: "100%",
-            height: "400px", // You can adjust this to fit your design
-          }}
-        ></Box>
-      </Stack> */}
-      <Stack>
-        <Box
-          sx={{
-            position: "relative", // Make the Box relative to position the text
-            backgroundImage: `url('/assets/contact.png')`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            width: "100%",
-            height: "400px", // Adjust height as needed
-          }}
+      <Stack p={"30px 50px 0 50px"}>
+        <Typography color="white" fontFamily={"Lora"} fontSize={"50px"}>
+          we mean business.
+        </Typography>
+        <Typography
+          color="white"
+          fontFamily={"Lora"}
+          fontSize={"90px"}
+          lineHeight={1}
         >
-          {/* Black overlay with opacity */}
-          <Box
-            sx={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              backgroundColor: "rgba(0, 0, 0, 0.7)", // Black overlay
-              zIndex: 1, // Ensure overlay appears over the image
-            }}
-          ></Box>
-
-          {/* Text on the image */}
-          <Typography
-            variant="h3"
-            sx={{
-              position: "absolute",
-              top: "50%",
-              left: "15%",
-              transform: "translate(-50%, -50%)", // Center the text
-              color: "#fff",
-              zIndex: 2, // Ensure text appears above the overlay
-              textAlign: "center",
-              fontWeight: "bold",
-            }}
-          >
-            Get in Touch
-          </Typography>
-          <Box
-            sx={{
-              content: "''",
-              width: "2px",
-              height: "100px",
-              backgroundColor: "#fff",
-              zIndex: 2,
-              position: "absolute",
-              top: "50%",
-              left: "28%",
-              transform: "translate(-50%, -50%)",
-            }}
-          />
-          <Typography
-            sx={{
-              position: "absolute",
-              top: "41%",
-              right: "20%",
-              color: "#fff",
-              zIndex: 2, // Ensure text appears above the overlay
-              fontWeight: "bold",
-              width:"50%"
-            }}
-          >
-            If you're in the Real Estate, Food and Beverage, E-commerce, or any
-            other business sector, our team has you covered! We offer top-notch
-            services tailored to your needs. Call us today for the best
-            solutions!
-          </Typography>
-        </Box>
+          reach out&nbsp;
+          <span style={{ color: "#005900", fontWeight: "bold" }}>
+            now.
+          </span>{" "}
+        </Typography>
+      </Stack>
+      <Stack alignItems={"end"} width={"70%"}>
+        <Box
+          sx={{
+            content: "''",
+            width: "600px",
+            height: "1px",
+            bgcolor: "#655d5d",
+          }}
+        />
       </Stack>
       <Stack direction={"row"} p={"50px 0px"}>
-        {/* <Stack width={"30%"} gap={"20px"} margin={"auto"}>
-        <Stack gap={"5px"}>
-          <Typography color="#0c9265" fontSize={"20px"}>
-            We appreciate your interest in Green & strategy.
-          </Typography>
-          <Typography color="#cdcdcd" fontSize={"15px"}>
-            Please fill out the form to reach us.
-          </Typography>
-        </Stack>
-        <Stack gap={"20px"}>
-          <Typography color="#0c9265" fontSize={"20px"}>
-            Why contact us?
-          </Typography>
-          <Box
+        <Stack width={"30%"} gap={"20px"} margin={"auto"}>
+          <Stack gap={"5px"}>
+            <Typography color="white" fontSize={"20px"} fontFamily={"Lora"}>
+              We greatly appreciate your interest.
+
+            </Typography>
+          </Stack>
+          <Stack gap={"20px"}>
+            <Typography color="#005900" fontSize={"20px"}>
+              If you're in the Real Estate, Food and Beverage, E-commerce, or
+              any other business sector, our team has you covered!
+            </Typography>
+            {/* <Box
             color="white"
             display={"flex"}
             gap={"10px"}
@@ -134,20 +75,20 @@ const ContactSection = () => {
             <li>Discuss possible solutions</li>
             <li>Achieve a better knowledge of the best choices</li>
             <li>Get a cost estimate, no obligation</li>
-          </Box>
+          </Box> */}
+          </Stack>
         </Stack>
-      </Stack> */}
+
         <Stack
-          width={"100%"}
+          width={"50%"}
           sx={{
             maxWidth: "700px",
             margin: "auto",
             padding: "2rem",
-            boxShadow: "0 0 10px 1px #fff",
             borderRadius: "8px",
           }}
         >
-          <h2
+          {/* <h2
             style={{
               color: "white",
               textAlign: "center",
@@ -157,7 +98,7 @@ const ContactSection = () => {
             }}
           >
             Contact us
-          </h2>
+          </h2> */}
           <Grid container spacing={2}>
             <Grid item xs={6}>
               {/* <TextField
