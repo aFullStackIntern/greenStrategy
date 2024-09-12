@@ -1,4 +1,4 @@
-// File: /Users/mobyink/project/GreenNstrategy/app/layout.js
+// File: C:\Users\jatin\OneDrive\Desktop\websites\greenNnstrategy\app\layout.js
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
